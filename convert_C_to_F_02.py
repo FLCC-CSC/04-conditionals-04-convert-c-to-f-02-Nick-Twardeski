@@ -28,14 +28,14 @@ def temp_converter():
     print('  2. Convert from Fahrenheit to Celsius')
 
     choice = int(input('Please choose from the above menu:'))
-    temp = int(input('Enter a temperature to convert:'))
+    temp = float(input('Enter a temperature to convert:'))
 
     if choice == 1:
         
         converted = temp * 9 / 5 + 32
         print(f'{temp} degrees Celsius is {converted} degrees Fahrenheit.')
 
-    else:
+    elif choice == 2:
         converted = (temp - 32) * 5/9
         print(f'{temp} degrees Fahrenheit is {converted} degrees Celsius.')
 
@@ -113,7 +113,7 @@ Enter a temperature to convert: -40
 
 
 
-I have to cast the numbers as an INT if i want to do math on them.
+I have to cast the temp as a float if i want it to print a decimal.
 
 
 
