@@ -1,8 +1,8 @@
 # FILE NAME - convert_C_to_F_02.py
 
-# NAME: 
-# DATE: 
-# BRIEF DESCRIPTION:  
+# NAME: Nicholas T
+# DATE: 3/13/26
+# BRIEF DESCRIPTION:  Convert C to F Lab
 
 
 
@@ -16,13 +16,31 @@
 ########## ENTER YER CODE BELOW THIS LINE ##########
 
 
+def main():
+    temp_converter()
 
 
+def temp_converter():
+  
+    print('===== Temperature Converter =====')
+    print('')
+    print('  1. Convert from Celsius to Fahrenheit')
+    print('  2. Convert from Fahrenheit to Celsius')
+
+    choice = int(input('Please choose from the above menu:'))
+    temp = int(input('Enter a temperature to convert:'))
+
+    if choice == 1:
+        
+        converted = temp * 9 / 5 + 32
+        print(f'{temp} degrees Celsius is {converted} degrees Fahrenheit.')
+
+    else:
+        converted = (temp - 32) * 5/9
+        print(f'{temp} degrees Fahrenheit is {converted} degrees Celsius.')
 
 
-
-
-
+main()
 
 ########### END YER CODE ABOVE THIS LINE ###########
 
@@ -95,7 +113,7 @@ Enter a temperature to convert: -40
 
 
 
-
+I have to cast the numbers as an INT if i want to do math on them.
 
 
 
